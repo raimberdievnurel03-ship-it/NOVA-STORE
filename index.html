@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ky">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NOVA STORE — заманбап кийим жана бут кийим интернет-дүкөнү">
+  <title>NOVA STORE | Premium Fashion</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="header">
+  <a href="#" class="logo">NOVA<span>.</span></a>
+
+  <nav id="nav">
+    <a href="#home">Башкы бет</a>
+    <a href="#products">Товарлар</a>
+    <a href="#about">Биз жөнүндө</a>
+    <a href="#contact">Байланыш</a>
+  </nav>
+
+  <div class="header-actions">
+    <button id="searchBtn" aria-label="Издөө">⌕</button>
+    <button id="favoriteBtn" aria-label="Тандалгандар">♡</button>
+    <button id="cartBtn" aria-label="Себет">🛒 <span id="cartCount">0</span></button>
+  </div>
+
+  <button class="menu" id="menu">☰</button>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-content">
+    <p class="eyebrow">NOVA STORE COLLECTION 2026</p>
+    <h1>СЕНИН СТИЛИҢ.<br><span>СЕНИН ЭРЕЖЕҢ.</span></h1>
+    <p>Заманбап образ, сапаттуу товарлар жана өзгөчө стиль.</p>
+    <a href="#products" class="primary-btn">Сатып алууну баштоо ↗</a>
+  </div>
+  <div class="hero-photo"></div>
+</section>
+
+<section class="categories">
+  <div>
+    <p class="eyebrow">NOVA COLLECTION</p>
+    <h2>ӨЗ СТИЛИҢДИ ТАП</h2>
+  </div>
+  <div class="category-list">
+    <button class="category active" data-category="all">Баары</button>
+    <button class="category" data-category="clothes">Кийимдер</button>
+    <button class="category" data-category="shoes">Бут кийим</button>
+    <button class="category" data-category="accessories">Аксессуарлар</button>
+  </div>
+</section>
+
+<section class="products" id="products">
+  <div class="section-heading">
+    <div>
+      <p class="eyebrow">БИЗДИН ТАНДОО</p>
+      <h2>ПОПУЛЯРДУУ ТОВАРЛАР</h2>
+    </div>
+    <input id="searchInput" type="search" placeholder="Товар издөө...">
+  </div>
+
+  <div class="product-grid" id="productGrid"></div>
+</section>
+
+<section class="promo" id="about">
+  <p class="eyebrow">NOVA STORE</p>
+  <h2>ЖӨНӨКӨЙЛҮКТӨГҮ<br>ӨЗГӨЧӨЛҮК.</h2>
+  <p>Сенин күнүмдүк стилиң үчүн тандалган коллекция.</p>
+  <a href="#products" class="primary-btn">Коллекцияны көрүү</a>
+</section>
+
+<section class="contact" id="contact">
+  <p class="eyebrow">БИЗ МЕНЕН БАЙЛАНЫШ</p>
+  <h2>СУРООЛОРУҢ БАРБЫ?</h2>
+  <p>Бизге WhatsApp аркылуу жаз.</p>
+  <a href="#" id="contactWhatsapp" class="primary-btn">WhatsApp аркылуу байланыш</a>
+</section>
+</main>
+
+<div class="modal" id="cartModal">
+  <div class="modal-content">
+    <button class="close" id="closeCart">✕</button>
+    <h2>СЕНИН СЕБЕТИҢ</h2>
+    <div id="cartItems"></div>
+    <h3>Жалпы сумма: <span id="totalPrice">0</span> сом</h3>
+    <button id="orderBtn" class="primary-btn">WhatsApp аркылуу заказ</button>
+  </div>
+</div>
+
+<footer>
+  <a href="#" class="logo">NOVA<span>.</span></a>
+  <p>© 2026 NOVA STORE. Demo website.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
